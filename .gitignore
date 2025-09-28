@@ -1,0 +1,48 @@
+# === Node (todas las subcarpetas) ===
+**/node_modules/
+**/logs/
+**/coverage/
+**/.cache/
+**/.vite/
+**/.parcel-cache/
+**/.turbo/
+**/.eslintcache
+**/.npmrc
+**/.pnpm-store/
+**/*.tsbuildinfo
+
+# Builds / artefactos
+**/dist/
+**/build/
+**/out/
+
+# Logs y PIDs
+**/*.log
+**/*.pid
+**/*.pid.lock
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Variables de entorno
+**/.env
+**/.env.*.local
+.env
+.env.*.local
+# (mantén tus ejemplos versionados)
+!**/.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker (opcional)
+keycloak/docker-compose.override.yml
+
+# Miscelánea
+*.orig
+*.rej

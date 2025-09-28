@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OAuth2 Demo (PKCE + Refresh)</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>OAuth 2.0 Demo</h1>
+        <p>Authorization Code + PKCE con refresh token (Keycloak) y API protegida.</p>
+        <div class="row">
+          <button id="loginBtn" class="primary">Iniciar sesión</button>
+          <button id="logoutBtn">Cerrar sesión</button>
+          <span id="status" class="badge">Desconectado</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Token actual</h2>
+        <div class="row">
+          <button id="showTokensBtn">Ver tokens</button>
+          <button id="refreshBtn">Forzar Refresh</button>
+        </div>
+        <pre id="tokensBox"><em>—</em></pre>
+      </div>
+
+      <div class="card">
+        <h2>Pruebas API</h2>
+        <div class="row">
+          <button id="callUserRead" class="primary">GET /user (user.read)</button>
+          <button id="callUserWrite">POST /user (user.write)</button>
+        </div>
+        <pre id="apiBox"><em>—</em></pre>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
